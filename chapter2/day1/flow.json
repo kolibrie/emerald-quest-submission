@@ -1,0 +1,31 @@
+{
+    "emulators": {
+        "default": {
+            "port": 3569,
+            "serviceAccount": "emulator-account"
+        }
+    },
+    "contracts": {
+        "HelloWorld": "./cadence/HelloWorld.cdc",
+        "JacobTucker": "./cadence/JacobTucker.cdc"
+    },
+    "networks": {
+        "emulator": "127.0.0.1:3569",
+        "mainnet": "access.mainnet.nodes.onflow.org:9000",
+        "testnet": "access.devnet.nodes.onflow.org:9000"
+    },
+    "accounts": {
+        "emulator-account": {
+            "address": "f8d6e0586b0a20c7",
+            "key": "6979fbd130759189632426fff4bd8da0066d26f90bb17c01ce23944632ddf23c"
+        }
+    },
+    "deployments": {
+        "emulator": {
+            "emulator-account": [
+                "HelloWorld",
+                "JacobTucker"
+            ]
+        }
+    }
+}
