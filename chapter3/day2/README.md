@@ -4,14 +4,6 @@
 
 See [cadence/ResourceStorage.cdc](cadence/ResourceStorage.cdc)
 
-As object:
-
-<object name="ResourceStorage.cdc" type="text/text" data="cadence/ResourceStorage.cdc"></object>
-
-As iframe:
-
-<iframe src="cadence/ResourceStorage.cdc" title="ResourceStorage.cdc"></iframe>
-
 ```sh
 flow project deploy --network=emulator
 ```
