@@ -20,9 +20,9 @@ on the blockchain.
 
 4. 
 
-- See ./cadence/HelloWorld.cdc for the addition of myNumber. 
-- See ./cadence/ReadHelloWorldNumber.cdc for reading the value of myNumber.
-- See ./cadence/WriteHelloWorldNumber.cdc for updating the value of myNumber.
+- See [cadence/HelloWorld.cdc](cadence/HelloWorld.cdc) for the addition of myNumber. 
+- See [cadence/ReadHelloWorldNumber.cdc](cadence/ReadHelloWorldNumber.cdc) for reading the value of myNumber.
+- See [cadence/WriteHelloWorldNumber.cdc](cadence/WriteHelloWorldNumber.cdc) for updating the value of myNumber.
 
 ```sh
 cd chapter2/day2

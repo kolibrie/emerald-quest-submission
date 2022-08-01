@@ -2,11 +2,15 @@
 
 1. In a script, initialize an array (that has length == 3) of your favourite people, represented as `String`s, and `log` it.
 
+See [cadence/array.cdc](cadence/array.cdc)
+
 ```sh
 flow scripts execute ./cadence/array.cdc
 ```
 
 2. In a script, initialize a dictionary that maps the `String`s Facebook, Instagram, Twitter, YouTube, Reddit, and LinkedIn to a `UInt64` that represents the order in which you use them from most to least. For example, YouTube --> 1, Reddit --> 2, etc. If you've never used one before, map it to 0!
+
+See [cadence/dictionary.cdc](cadence/dictionary.cdc)
 
 ```sh
 flow scripts execute ./cadence/dictionary.cdc

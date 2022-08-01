@@ -8,6 +8,8 @@ flow emulator start -v
 
 Deploy the contracts and run a script to make sure they work.
 
+See [cadence/ReadJacobTucker.cdc](cadence/ReadJacobTucker.cdc)
+
 ```sh
 cd chapter2/day1
 flow project deploy --network=emulator

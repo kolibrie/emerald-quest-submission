@@ -1,5 +1,9 @@
 ### Day 4
 
+See [cadence/Items.cdc](cadence/Items.cdc)
+See [cadence/AddItem.cdc](cadence/AddItem.cdc)
+See [cadence/ReadItem.cdc](cadence/ReadItem.cdc)
+
 ```sh
 flow project deploy --network=emulator
 flow transactions send ./cadence/AddItem.cdc "bag of lemons" "600g" 4 1 --network=emulator --signer=emulator-account
