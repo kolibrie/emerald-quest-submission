@@ -9,3 +9,6 @@ See [cadence/Ordinals.cdc](cadence/Ordinals.cdc)
 See [cadence/ReadOrdinal.cdc](cadence/ReadOrdinal.cdc)
 
 3. Explain, in your own words, why references can be useful in Cadence.
+
+References are useful because they allow you to access Resources
+without having to move the Resource each time.
