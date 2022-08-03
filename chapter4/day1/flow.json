@@ -1,0 +1,29 @@
+{
+    "emulators": {
+        "default": {
+            "port": 3569,
+            "serviceAccount": "emulator-account"
+        }
+    },
+    "contracts": {
+        "Circles": "./cadence/Circles.cdc"
+    },
+    "networks": {
+        "emulator": "127.0.0.1:3569",
+        "mainnet": "access.mainnet.nodes.onflow.org:9000",
+        "testnet": "access.devnet.nodes.onflow.org:9000"
+    },
+    "accounts": {
+        "emulator-account": {
+            "address": "f8d6e0586b0a20c7",
+            "key": "68493b6b8c5342ff0a6597c9fd5c8fc450dc354bc1b14f88e0db73c4ca28ac26"
+        }
+    },
+    "deployments": {
+        "emulator": {
+            "emulator-account": [
+                "Circles"
+            ]
+        }
+    }
+}
