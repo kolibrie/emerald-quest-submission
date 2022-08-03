@@ -5,8 +5,9 @@
 - Resources cannot be copied (there can only be one copy at a
   time) and structs can be copied and have more than one copy in
   existance at a time.
-- Resources cannot be accidentally deleted or lost and structs
-  can be deleted much more easily.
+- Resources use different syntax for creating, moving, or
+  deleting them (to make sure we handle them properly) and
+  structs are assigned to just like other normal types.
 - Resources can only be created within a contract and structs can
   be created in contracts, scripts, and transactions.
 
@@ -36,7 +37,7 @@ pub resource Jacob {
 }
 ```
 
-That resource is of type `Jacob`.
+That resource is of type `@Jacob`.
 
 6. Let's play the "I Spy" game from when we were kids. I Spy 4 things wrong with this code. Please fix them.
 
