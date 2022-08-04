@@ -1,0 +1,23 @@
+{
+    "contracts": {
+        "CryptoPoops": "./cadence/CryptoPoops.cdc"
+    },
+    "networks": {
+        "emulator": "127.0.0.1:3569",
+        "mainnet": "access.mainnet.nodes.onflow.org:9000",
+        "testnet": "access.devnet.nodes.onflow.org:9000"
+    },
+    "accounts": {
+        "emulator-account": {
+            "address": "f8d6e0586b0a20c7",
+            "key": "c8bb5f390d460769402c8bbf035b6cbb5d61c4702dd94fc2bd551c959a26270c"
+        }
+    },
+    "deployments": {
+        "emulator": {
+            "emulator-account": [
+                "CryptoPoops"
+            ]
+        }
+    }
+}
