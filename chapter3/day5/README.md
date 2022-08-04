@@ -101,7 +101,7 @@ pub fun main() {
   /**************/
   /*** AREA 4 ***/
   /**************/
-  // a read and write
+  // a read (and would have write, except this is a script and cannot write)
   // b read
   // c not available
   // d not available
