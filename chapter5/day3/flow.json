@@ -1,0 +1,29 @@
+{
+    "contracts": {
+        "NonFungibleToken": "./cadence/NonFungibleToken.cdc",
+        "CryptoPoops": "./cadence/CryptoPoops.cdc"
+    },
+    "networks": {
+        "emulator": "127.0.0.1:3569",
+        "mainnet": "access.mainnet.nodes.onflow.org:9000",
+        "testnet": "access.devnet.nodes.onflow.org:9000"
+    },
+    "accounts": {
+        "emulator-account": {
+            "address": "f8d6e0586b0a20c7",
+            "key": "403334b337c978630770215576c7d37e10c6bf53f13977507abbcd5d2ee8a729"
+        },
+        "recipient-account": {
+            "address": "01cf0e2f2f715450",
+            "key": "f59ea3d258cdbe22d7494f0a5de7a769c49ba8cc5753684d9e34137e67a5b81f"
+        }
+    },
+    "deployments": {
+        "emulator": {
+            "emulator-account": [
+                "NonFungibleToken",
+                "CryptoPoops"
+            ]
+        }
+    }
+}
