@@ -1,0 +1,49 @@
+{
+    "contracts": {
+        "NonFungibleToken": {
+            "source": "./cadence/contracts/NonFungibleToken.cdc",
+            "aliases": {
+                "testnet": "0x631e88ae7f1d7c20"
+            }
+        },
+        "EmeraldNFTExample": "./cadence/contracts/EmeraldNFTExample.cdc"
+    },
+    "networks": {
+        "emulator": "127.0.0.1:3569",
+        "mainnet": "access.mainnet.nodes.onflow.org:9000",
+        "testnet": "access.devnet.nodes.onflow.org:9000"
+    },
+    "accounts": {
+        "emulator-account": {
+            "address": "f8d6e0586b0a20c7",
+            "key": "525b1d748f68e36a7ffa17d67f1c36fde08d7ef5fd4645464bf27114c9d0b443"
+        },
+        "recipient-account": {
+            "address": "01cf0e2f2f715450",
+            "key": "690281b5a1fbbedb4b291c6e49869cc92ec29b53b2a99698323d54b36701f45b"
+        },
+        "testnet-account": {
+            "address": "0x71925bc318416be3",
+            "key": {
+                "type": "hex",
+                "index": 0,
+                "signatureAlgorithm": "ECDSA_P256",
+                "hashAlgorithm": "SHA3_256",
+                "privateKey": "69e7cf97e87395e8e52d1cd72bd56ee6768c738e5397b8ea1f71f08dd2863218"
+            }
+        }
+    },
+    "deployments": {
+        "emulator": {
+            "emulator-account": [
+                "NonFungibleToken",
+                "EmeraldNFTExample"
+            ]
+        },
+        "testnet": {
+            "testnet-account": [
+                "EmeraldNFTExample"
+            ]
+        }
+    }
+}
