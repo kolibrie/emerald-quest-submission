@@ -116,6 +116,8 @@ Events:
 
 2. Run a script to read the new `totalSupply` using the Flow CLI
 
+See the script in [cadence/scripts/read_total_supply.cdc](cadence/scripts/read_total_supply.cdc)
+
 ```sh
 flow scripts execute cadence/scripts/read_total_supply.cdc --network=testnet
 ```
@@ -126,6 +128,8 @@ Result: 1
 ```
 
 3. Run a script to read the ids of NFTs in someone's collection using the Flow CLI
+
+See the script in [cadence/scripts/read_nft_ids.cdc](cadence/scripts/read_nft_ids.cdc)
 
 ```sh
 flow scripts execute cadence/scripts/read_nft_ids.cdc 0x71925bc318416be3 --network=testnet
@@ -138,6 +142,8 @@ Result: [102987969, 102962537]
 
 4. Run a script to read a specific NFT's metadata from someone's collection using the Flow CLI
 
+See the script in [cadence/scripts/read_nft_metadata.cdc](cadence/scripts/read_nft_metadata.cdc)
+
 ```sh
 flow scripts execute cadence/scripts/read_nft_metadata.cdc 0x71925bc318416be3 102962537 --network=testnet
 ```
@@ -148,6 +154,8 @@ Result: A.71925bc318416be3.EmeraldNFTExample.NFT(uuid: 102962537, id: 102962537,
 ```
 
 5. Run a script to read the GoatedGoats `totalSupply` on **Flow Mainnet**. Their contract lives here: https://flow-view-source.com/mainnet/account/0x2068315349bdfce5/contract/GoatedGoats
+
+See the script in [cadence/scripts/read_goats_total_supply.cdc](cadence/scripts/read_goats_total_supply.cdc)
 
 ```sh
 flow scripts execute cadence/scripts/read_goats_total_supply.cdc --network=mainnet
@@ -166,6 +174,8 @@ FLOATs held in an account (since I know people who have those).
 
 See the FLOAT contract at [https://flow-view-source.com/mainnet/account/0x2d4c3caffbeab845/contract/FLOAT](https://flow-view-source.com/mainnet/account/0x2d4c3caffbeab845/contract/FLOAT)
 
+See the script in [cadence/scripts/read_float_ids.cdc](cadence/scripts/read_float_ids.cdc)
+
 ```sh
 flow scripts execute cadence/scripts/read_float_ids.cdc 0x47e6f33743d42ad8 --network=mainnet
 ```
@@ -174,6 +184,8 @@ Output:
 ```text
 Result: [423878840]
 ```
+
+See the script in [cadence/scripts/read_float_metadata.cdc](cadence/scripts/read_float_metadata.cdc)
 
 ```sh
 flow scripts execute cadence/scripts/read_float_metada.cdc 0x47e6f33743d42ad8 423878840 --network=mainnet
